@@ -9,7 +9,8 @@ public class PresentationStatique {
         DaoImpl dao = new DaoImpl();
         MetierImpl metier = new MetierImpl();
         metier.setDao(dao);
-        System.out.println("Resultats = "+metier.calcul());
+        System.out.println("valeur initial  = "+dao.getData());
+        System.out.println("Resultats apres le calcul  = "+metier.calcul());
 
     }
 }
